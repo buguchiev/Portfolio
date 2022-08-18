@@ -1,0 +1,653 @@
+*{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Jost, sans-serif;
+}
+html, body{
+    overflow-x: hidden;
+}
+.container{
+    background-color: #3A3A3A;
+    background-size: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.home{
+    max-width: 80%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*overflow: hidden;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*z-index: 999;*/
+    /*background-color: #333;*/
+}
+.containerHumb{
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #3A3A3A;
+    border-radius: 0 0 20px 20px;
+
+}
+.navBar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+    /*background-color: #3A3A3A;*/
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.navBar__wrap{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.hamb{
+    display: none;
+}
+.popup{
+    display: none;
+}
+.logo{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.menu li a{
+    text-decoration: none;
+}
+.navBar__wrap .menu{
+    display: flex;
+}
+.navBar__wrap .menu li{
+    display: flex;
+    align-items: stretch;
+}
+.navBar__wrap .menu li a{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
+}
+.navBar__wrap .menu li a:hover{
+    color: #BDFF00;
+    transition: .5s;
+}
+.header__navBar{
+    display: flex;
+    align-items: center;
+    margin: 48px 0 0 0;
+    color: white;
+    cursor: pointer;
+}
+.header__navBar a{
+    color: #FFFFFF;
+    text-decoration: none;
+    /*font-size: 15px;*/
+    /*font-weight: 500;*/
+}
+.header__navBar a:hover{
+    color: #BDFF00;
+    transition: .4s;
+}
+
+
+
+.header__name{
+    margin: 48px 0 0 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+}
+.header__name__last{
+    color: #BDFF00;
+}
+.header__photo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 250px;
+}
+.aboutMe{
+    margin: 150px 0 0 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutMe__title{
+    font-size: 28px;
+}
+.aboutMe__jobTitle{
+    font-size: 32px;
+    color: #BDFF00;
+    margin: 40px 0 0 0;
+}
+.aboutMe__wish{
+    margin: 40px 0 0 0;
+}
+.aboutMe__btn{
+    max-width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background: #BDFF00;
+    color: black;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 29px;
+    margin: 40px 0 0 0;
+    cursor: pointer;
+}
+
+.containerTwo{
+    background-size: 100%;
+    margin-bottom: 100px;
+}
+.aboutMe__two{
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.aboutMe__two-title{
+   text-align: center;
+    color: #BDFF00;
+    margin-bottom: 50px;
+}
+.aboutMe__two-card{
+    display: flex;
+}
+.aboutMe__two-card .card{
+    background: #FFFFFF;
+    box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.25);
+}
+.aboutMe__two-card img{
+    width: 90px;
+    height: 72px;
+    margin-top: 20px;
+}
+.aboutMe__two-card h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+.aboutMe__two-card p{
+    text-align: center;
+}
+
+.portfolio{
+    /*min-height: 100vh;*/
+    height: 100%;
+    width: 100%;
+}
+.containerThree{
+    background-image: url("../image/section3.png");
+    background-size: cover;
+    min-width: 100%;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.portfolio__title{
+    font-weight: 700;
+    text-align: center;
+    padding-top: 90px;
+}
+.carousel-item{
+    width: 100%;
+    height: 100%;
+}
+.portfolio__swiper{
+    margin-top: 50px;
+    padding: 0 0 10% 0;
+}
+.portfolio__swiper img{
+    border-radius: 20px;
+    width: 1200px;
+    height: 550px;
+}
+
+
+
+
+.skills{
+    background-color: #3A3A3A;
+    /*min-height: 80vh;*/
+    padding-bottom: 100px;
+}
+.skills__title{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-weight: 700;
+}
+.progressBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    max-width: 80%;
+}
+.mySkills{
+    width: 150px;
+}
+.progressBar__html{
+    text-align: center;
+    color: white;
+    margin-right: 50px;
+}
+.progressBar__css{
+    text-align: center;
+    color: white;
+}
+.progressBar__JS{
+    text-align: center;
+    color: white;
+}
+.progressBar__React{
+    text-align: center;
+    color: white;
+    margin-left: 50px;
+}
+
+.containerFive{
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.footer{
+    justify-content: space-between;
+    margin-top: 70px;
+    background-color: white;
+    /*-moz-border-radius-topleft: 50px;*/
+    /*-moz-border-radius-topright: 50px;*/
+    display: flex;
+    align-items: center;
+}
+.footer__logo h2{
+text-align: center;
+}
+.footer__logo img{
+    width: 150px;
+}
+.footer__name{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+}
+.footer__name__last{
+    color: #BDFF00;
+}
+
+.quicklinks__title{
+    color: #BDFF00;
+    font-weight: 700;
+}
+.quicklinks__item a{
+    text-decoration: none;
+    color: black;
+}
+.quicklinks__item a:hover{
+    color: #BDFF00;
+}
+.footer__social-img img{
+    width: 40px;
+}
+.footer__contact-title{
+    font-weight: 700;
+    color: #BDFF00;
+}
+.footer__contact-mail{
+    color: #BDFF00;
+}
+.footer__contact-phone{
+    color: #BDFF00;
+}
+.footer__contact-tel{
+    text-decoration: none;
+    color: black;
+}
+.footer__contact-tel:hover{
+    color: #BDFF00;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu li a{
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 992px) {
+.container{
+    max-width: 992px;
+}
+    .aboutMe{
+        margin: 100px 0 0 0;
+    }
+    .skills__title{
+        padding-top: 50px;
+    }
+    .progressBar img{
+        width: 120px;
+    }
+    .navBar__wrap .menu{
+        display: none;
+    }
+    .hamb{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bar{
+        display: block;
+        width: 35px;
+        height: 3px;
+        margin: 6px 20px;
+        background-color: #BDFF00;
+        transition: .5s;
+    }
+    .logo{
+        margin-left: 150px;
+    }
+    .popup{
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        max-width: 80%;
+        margin-left: 99px;
+        height: 100%;
+        background-color: #3A3A3A;
+        z-index: 101;
+        display: flex;
+        transition: .5s;
+    }
+    .popup.open {
+        left: 0;
+    }
+    .popup .menu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0;
+    }
+    .popup .menu li{
+        width: 100%;
+    }
+    .popup .menu li a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 20px;
+        color: white;
+    }
+    .popup .menu li a:hover{
+        color: #BDFF00;
+        transition: .5s;
+    }
+    /*.header li{*/
+    /*    font-size: 11px;*/
+    /*    !*margin-right: 35px;*!*/
+    /*}*/
+    .portfolio__swiper img{
+        border-radius: 20px;
+        width: 800px;
+        height: 350px;
+    }
+    .footer__social-img img{
+        width: 35px;
+    }
+    .footer__name{
+        font-size: 19px;
+        font-weight: 700;
+    }
+    .quicklinks__title{
+        font-size: 20px;
+    }
+    .footer__social{
+        margin-left: 50px;
+    }
+    .footer__social-title{
+        color: #BDFF00;
+        font-weight: 700;
+        font-size: 19px;
+    }
+    .hamb__field.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamb__field.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamb__field.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    br{
+        display: none;
+    }
+   .navBar__wrap .menu{
+       display: none;
+   }
+    .hamb{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .hamb__field{
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 35px;
+        height: 3px;
+        margin: 6px 20px;
+        background-color: #BDFF00;
+        transition: .5s;
+    }
+    .logo{
+        margin-left: 150px;
+    }
+    .popup{
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        max-width: 80%;
+        margin-left: 77px;
+        height: 100%;
+        background-color: #3A3A3A;
+        z-index: 101;
+        display: flex;
+        transition: .5s;
+    }
+    .popup.open {
+        left: 0;
+    }
+    .popup .menu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0;
+    }
+    .popup .menu li{
+        width: 100%;
+    }
+    .popup .menu li a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 20px;
+        color: white;
+    }
+    .popup .menu li a:hover{
+        color: #BDFF00;
+        transition: .5s;
+    }
+    .aboutMe__two-card.card{
+        width: 12px;
+    }
+    .progressBar img{
+        width: 110px;
+    }
+    .quicklinks__title{
+        font-size: 17px;
+    }
+    .quicklinks__item{
+        font-size: 12px;
+    }
+    .footer__contact-mail{
+        font-size: 13px;
+    }
+    .footer__contact-tel{
+        font-size: 13px;
+    }
+    .footer__contact-phone{
+        font-size: 15px;
+    }
+    .footer__contact-title{
+        font-size: 17px;
+    }
+    .footer__social-title{
+        font-size: 17px;
+    }
+    .footer__social-img img{
+        width: 23px;
+    }
+
+    .hamb__field.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamb__field.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamb__field.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navBar__wrap .menu{
+        display: none;
+    }
+.aboutMe__two-card .card{
+  width: 90%;
+}
+    .card-text{
+        font-size: 12px;
+    }
+    .header__name{
+        display: flex;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .portfolio__swiper img{
+        width: 460px;
+        height: 280px;
+    }
+        .progressBar img{
+        width: 90px;
+    }
+      .footer__logo{
+          display: none;
+      }
+      br{
+          display: none;
+      }
+      .footer__contact{
+          margin-left: 50px;
+      }
+      .footer__social-img{
+          display: flex;
+      }
+    .footer__social-img img{
+        display: flex;
+        width: 23px;
+    }
+    .popup{
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        max-width: 80%;
+        margin-left: 57px;
+        height: 100%;
+        background-color: #3A3A3A;
+        z-index: 101;
+        display: flex;
+        transition: .5s;
+    }
+    .hamb__field.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamb__field.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamb__field.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 547px){
+    .navBar__wrap .menu{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
