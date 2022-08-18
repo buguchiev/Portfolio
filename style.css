@@ -204,7 +204,7 @@ html, body{
     width: 100%;
 }
 .containerThree{
-    background-image: url("../image/section3.png");
+    background-image: url("image/section3.png");
     background-size: cover;
     min-width: 100%;
     margin: 0 auto;
